@@ -28,13 +28,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/shiroha-a/mkqd"
+	"github.com/elythia-network/mkqd"
 
 	// 設定ファイルから名前で指定できる executor を登録する。単体バイナリは
 	// 組み込みの executor をすべてリンクする (apdeliver は keys サブコマンド
 	// でも使うので blank import ではない)。
-	"github.com/shiroha-a/mkqd/executor/apdeliver"
-	_ "github.com/shiroha-a/mkqd/executor/httpexec"
+	"github.com/elythia-network/mkqd/executor/apdeliver"
+	_ "github.com/elythia-network/mkqd/executor/httpexec"
 )
 
 func main() {

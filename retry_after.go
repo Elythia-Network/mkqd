@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/shiroha-a/mkq"
+	"github.com/elythia-network/mkq"
 )
 
 // maxRetryAfter bounds how long a server can push a job out.

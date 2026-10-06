@@ -9,7 +9,7 @@
 // Import it for its side effects to make the type available to a
 // configuration file:
 //
-//	import _ "github.com/shiroha-a/mkqd/executor/apdeliver"
+//	import _ "github.com/elythia-network/mkqd/executor/apdeliver"
 //
 // # Keys
 //
@@ -35,11 +35,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shiroha-a/mkq"
-	"github.com/shiroha-a/mkqd"
-	"github.com/shiroha-a/mkqd/httpsig"
-	"github.com/shiroha-a/mkqd/internal/httpsend"
-	"github.com/shiroha-a/mkqd/internal/safedial"
+	"github.com/elythia-network/mkq"
+	"github.com/elythia-network/mkqd"
+	"github.com/elythia-network/mkqd/httpsig"
+	"github.com/elythia-network/mkqd/internal/httpsend"
+	"github.com/elythia-network/mkqd/internal/safedial"
 )
 
 const (

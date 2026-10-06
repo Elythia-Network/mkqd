@@ -20,8 +20,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/shiroha-a/mkq"
-	"github.com/shiroha-a/mkqd"
+	"github.com/elythia-network/mkq"
+	"github.com/elythia-network/mkqd"
 )
 
 // Delivery is the job payload. mkqd is generic over it: the handler

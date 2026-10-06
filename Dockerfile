@@ -23,7 +23,7 @@ COPY . .
 ARG VERSION=""
 RUN CGO_ENABLED=0 GOOS=linux go build \
     -trimpath \
-    -ldflags "-s -w${VERSION:+ -X github.com/shiroha-a/mkqd.Version=$VERSION}" \
+    -ldflags "-s -w${VERSION:+ -X github.com/elythia-network/mkqd.Version=$VERSION}" \
     -o /out/mkqd ./cmd/mkqd
 
 # static: libc も shell も無い。mkqd は CGO 無しの 1 バイナリなので足りる。

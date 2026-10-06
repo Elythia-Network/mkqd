@@ -16,8 +16,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shiroha-a/mkqd"
-	"github.com/shiroha-a/mkqd/httpsig"
+	"github.com/elythia-network/mkqd"
+	"github.com/elythia-network/mkqd/httpsig"
 )
 
 func writeKey(t *testing.T, path string) *rsa.PrivateKey {

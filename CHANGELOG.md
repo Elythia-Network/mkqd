@@ -6,6 +6,20 @@ follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+
+- **The module path is now `github.com/elythia-network/mkqd`** (was
+  `github.com/shiroha-a/mkqd`). The repository moved to
+  `Elythia-Network/mkqd` (#29). If you embed mkqd, update your imports;
+  `go install github.com/elythia-network/mkqd/cmd/mkqd@latest` installs
+  the binary. Under the new path, v0.1.0 and v0.2.0 are retracted; they
+  remain available under the old path when pinned.
+- **Requires mkq 1.5.0**, which moved to `github.com/elythia-network/mkq`
+  with no wire or API change. mkqd's API passes mkq types through
+  (`QueueOption`, handlers), so an embedding application must move its
+  own mkq imports to the new path at the same time: types from the old
+  and new paths do not mix.
+
 ## [0.2.0] - 2026-09-23
 
 Honours a remote's `Retry-After`. Requires **mkq 1.3.0**.
@@ -42,7 +56,7 @@ Honours a remote's `Retry-After`. Requires **mkq 1.3.0**.
 
 ## [0.1.0] - 2026-09-23
 
-First release. mkqd runs [mkq](https://github.com/shiroha-a/mkq) queues
+First release. mkqd runs [mkq](https://github.com/Elythia-Network/mkq) queues
 as a standalone worker or as a runtime embedded in a Go application,
 and owns the process concerns — configuration, worker lifecycle,
 shutdown, health and metrics, outbound delivery — while mkq keeps
@@ -175,7 +189,7 @@ declaring `go 1.27.1` cannot be built by an older one.
   The dashboard declares `ioredis` explicitly: **BullMQ 6 moved it from
   a hard dependency to an optional peer dependency**, and npm does not
   install those on its own. Without it `new Queue(...)` fails at
-  startup. mkq's own interop harness is affected too (shiroha-a/mkq#108).
+  startup. mkq's own interop harness is affected too (Elythia-Network/mkq#108).
 
 - `examples/embedded`: the README's opening snippet as a runnable
   program, against a throwaway key prefix.
@@ -214,6 +228,6 @@ declaring `go 1.27.1` cannot be built by an older one.
   application embedding mkqd needs a 1.27 toolchain: a module declaring
   `go 1.27.1` cannot be built by an older one.
 
-[Unreleased]: https://github.com/shiroha-a/mkqd/compare/v0.2.0...HEAD
-[0.2.0]: https://github.com/shiroha-a/mkqd/compare/v0.1.0...v0.2.0
-[0.1.0]: https://github.com/shiroha-a/mkqd/releases/tag/v0.1.0
+[Unreleased]: https://github.com/Elythia-Network/mkqd/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/Elythia-Network/mkqd/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/Elythia-Network/mkqd/releases/tag/v0.1.0

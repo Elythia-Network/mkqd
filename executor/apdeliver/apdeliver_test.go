@@ -18,10 +18,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shiroha-a/mkq"
-	"github.com/shiroha-a/mkqd"
-	"github.com/shiroha-a/mkqd/httpsig"
-	"github.com/shiroha-a/mkqd/internal/safedial"
+	"github.com/elythia-network/mkq"
+	"github.com/elythia-network/mkqd"
+	"github.com/elythia-network/mkqd/httpsig"
+	"github.com/elythia-network/mkqd/internal/safedial"
 )
 
 const testKeyID = "https://local.example/users/me#main-key"

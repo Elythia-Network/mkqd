@@ -13,8 +13,8 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/shiroha-a/mkq"
-	"github.com/shiroha-a/mkqd"
+	"github.com/elythia-network/mkq"
+	"github.com/elythia-network/mkqd"
 )
 
 // inspectTimeout bounds every read-only command. Long enough for a

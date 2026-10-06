@@ -12,7 +12,7 @@
 // Import it for its side effects to make the types available to a
 // configuration file:
 //
-//	import _ "github.com/shiroha-a/mkqd/executor/httpexec"
+//	import _ "github.com/elythia-network/mkqd/executor/httpexec"
 package httpexec
 
 import (
@@ -26,9 +26,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shiroha-a/mkq"
-	"github.com/shiroha-a/mkqd"
-	"github.com/shiroha-a/mkqd/internal/httpsend"
+	"github.com/elythia-network/mkq"
+	"github.com/elythia-network/mkqd"
+	"github.com/elythia-network/mkqd/internal/httpsend"
 )
 
 // Request headers mkqd sets on every dispatch.

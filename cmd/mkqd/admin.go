@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"slices"
 
-	"github.com/shiroha-a/mkq"
+	"github.com/elythia-network/mkq"
 )
 
 // createQueue returns a handle for a queue that may not exist yet.

@@ -13,10 +13,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shiroha-a/mkqd"
-	"github.com/shiroha-a/mkqd/httpsig"
-	"github.com/shiroha-a/mkqd/internal/httpsend"
-	"github.com/shiroha-a/mkqd/internal/safedial"
+	"github.com/elythia-network/mkqd"
+	"github.com/elythia-network/mkqd/httpsig"
+	"github.com/elythia-network/mkqd/internal/httpsend"
+	"github.com/elythia-network/mkqd/internal/safedial"
 )
 
 // remoteSigner asks the application to sign, instead of holding a key.

@@ -15,9 +15,9 @@ import (
 	"github.com/prometheus/client_golang/prometheus/collectors"
 	"github.com/redis/go-redis/v9"
 
-	"github.com/shiroha-a/mkq"
-	"github.com/shiroha-a/mkq/observability/promadapter"
-	"github.com/shiroha-a/mkq/observability/slogadapter"
+	"github.com/elythia-network/mkq"
+	"github.com/elythia-network/mkq/observability/promadapter"
+	"github.com/elythia-network/mkq/observability/slogadapter"
 )
 
 // Runtime owns everything a job-processing process needs: the Redis
