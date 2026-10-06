@@ -1,6 +1,6 @@
 # mkqd
 
-Standalone worker for [mkq](https://github.com/shiroha-a/mkq) — a
+Standalone worker for [mkq](https://github.com/Elythia-Network/mkq) — a
 BullMQ-compatible Go job queue. mkqd is the part every deployment ends
 up rewriting: configuration, worker lifecycle, graceful shutdown,
 health and metrics endpoints, and the outbound plumbing an ActivityPub
@@ -50,7 +50,7 @@ and the full command set — `run`, `check`, the inspect commands
 ## Install
 
 ```sh
-go install github.com/shiroha-a/mkqd/cmd/mkqd@latest
+go install github.com/elythia-network/mkqd/cmd/mkqd@latest
 ```
 
 Requires Go 1.27+ and Redis 7+ (the same floor as mkq).
@@ -239,7 +239,7 @@ application links only what it uses. The `mkqd` binary links all of
 them; an application embedding the runtime imports what it needs:
 
 ```go
-import _ "github.com/shiroha-a/mkqd/executor/httpexec"
+import _ "github.com/elythia-network/mkqd/executor/httpexec"
 ```
 
 Naming a type whose package nobody imported is a startup error that

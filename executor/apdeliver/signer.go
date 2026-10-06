@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/shiroha-a/mkqd"
-	"github.com/shiroha-a/mkqd/httpsig"
+	"github.com/elythia-network/mkqd"
+	"github.com/elythia-network/mkqd/httpsig"
 )
 
 // Config is the YAML block of the "activitypub_deliver" executor.

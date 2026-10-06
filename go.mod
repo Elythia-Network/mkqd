@@ -1,11 +1,14 @@
-module github.com/shiroha-a/mkqd
+module github.com/elythia-network/mkqd
 
 go 1.27.1
 
+// Published as github.com/shiroha-a/mkqd; not fetchable under this path. Use v0.3.0 or later.
+retract [v0.1.0, v0.2.0]
+
 require (
+	github.com/elythia-network/mkq v1.5.0
 	github.com/prometheus/client_golang v1.24.1
 	github.com/redis/go-redis/v9 v9.22.0
-	github.com/shiroha-a/mkq v1.3.0
 	github.com/stretchr/testify v1.12.1
 	go.yaml.in/yaml/v3 v3.0.5
 )

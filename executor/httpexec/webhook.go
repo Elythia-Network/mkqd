@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/shiroha-a/mkqd"
-	"github.com/shiroha-a/mkqd/internal/safedial"
+	"github.com/elythia-network/mkqd"
+	"github.com/elythia-network/mkqd/internal/safedial"
 )
 
 // WebhookOptions is the configuration block of the "webhook" executor.

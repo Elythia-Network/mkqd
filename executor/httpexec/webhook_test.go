@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shiroha-a/mkq"
-	"github.com/shiroha-a/mkqd"
-	"github.com/shiroha-a/mkqd/internal/safedial"
+	"github.com/elythia-network/mkq"
+	"github.com/elythia-network/mkqd"
+	"github.com/elythia-network/mkqd/internal/safedial"
 )
 
 // webhookPayload renders a payload for the job data.

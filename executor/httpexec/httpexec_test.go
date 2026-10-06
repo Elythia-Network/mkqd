@@ -21,8 +21,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shiroha-a/mkq"
-	"github.com/shiroha-a/mkqd"
+	"github.com/elythia-network/mkq"
+	"github.com/elythia-network/mkqd"
 )
 
 // executorConfig builds an ExecutorConfig the way the runtime does, by

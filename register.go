@@ -7,7 +7,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/shiroha-a/mkq"
+	"github.com/elythia-network/mkq"
 )
 
 // QueueOption is a per-queue tuning knob supplied at registration time

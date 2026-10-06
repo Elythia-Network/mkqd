@@ -1,7 +1,7 @@
 # mkqd
 
 Standalone worker and embeddable runtime for
-[mkq](https://github.com/shiroha-a/mkq), aimed at Go ActivityPub
+[mkq](https://github.com/Elythia-Network/mkq), aimed at Go ActivityPub
 servers. mkqd owns process concerns — configuration, worker lifecycle,
 shutdown, health and metrics, outbound delivery — and never the Redis
 wire format.

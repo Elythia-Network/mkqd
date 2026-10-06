@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/shiroha-a/mkq"
+	"github.com/elythia-network/mkq"
 )
 
 // Executor runs a single job whose payload type is not known at compile
@@ -179,9 +179,9 @@ func init() {
 // can name a type whose package nobody imported. Naming the import in
 // the error turns a dead end into a one-line fix.
 var builtinExecutorPackages = map[string]string{
-	"http":                "github.com/shiroha-a/mkqd/executor/httpexec",
-	"webhook":             "github.com/shiroha-a/mkqd/executor/httpexec",
-	"activitypub_deliver": "github.com/shiroha-a/mkqd/executor/apdeliver",
+	"http":                "github.com/elythia-network/mkqd/executor/httpexec",
+	"webhook":             "github.com/elythia-network/mkqd/executor/httpexec",
+	"activitypub_deliver": "github.com/elythia-network/mkqd/executor/apdeliver",
 }
 
 // plannedExecutors are types the documentation mentions but that no

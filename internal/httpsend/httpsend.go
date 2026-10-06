@@ -17,7 +17,7 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/shiroha-a/mkqd/internal/safedial"
+	"github.com/elythia-network/mkqd/internal/safedial"
 )
 
 // Headers mkqd sets on a request it authenticates to the application.
