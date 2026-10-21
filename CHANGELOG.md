@@ -6,6 +6,17 @@ follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+
+- Go 1.27.3. The `go` directive and the build image (`golang:1.27.3`)
+  move from 1.27.1 to pick up the standard library security fixes that
+  govulncheck reported as reachable on 1.27.1 (#33): `crypto/x509`
+  (GO-2026-6809, fixed in 1.27.3), and nine fixed in 1.27.2 in
+  `net/http` and its HTTP/2 implementation (GO-2026-6603 / GO-2026-6605 /
+  GO-2026-6610 / GO-2026-6611 / GO-2026-6612 / GO-2026-6613 /
+  GO-2026-6617), `crypto/tls` (GO-2026-6607) and `net/textproto`
+  (GO-2026-6608).
+
 ## [0.3.0] - 2026-10-06
 
 Moves the module path to `github.com/elythia-network/mkqd`. Requires **mkq 1.5.0**.

@@ -1,6 +1,6 @@
 module github.com/elythia-network/mkqd
 
-go 1.27.1
+go 1.27.3
 
 // Published as github.com/shiroha-a/mkqd; not fetchable under this path. Use v0.3.0 or later.
 retract [v0.1.0, v0.2.0]

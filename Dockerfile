@@ -8,7 +8,7 @@
 # ビルドのたびに中身が変わって再現性が無く、govulncheck が見るのは go.mod 側
 # なので、ここがずれていると **CI は緑のまま配る image だけが古い** という
 # 状態が起きうる。CI がこの一致を検査している。
-FROM golang:1.27.1 AS build
+FROM golang:1.27.3 AS build
 
 WORKDIR /src
 
